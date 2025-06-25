@@ -57,9 +57,9 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto flex flex-col gap-20">
       {/* Hero Section */}
-      <section className="flex pt-32 pb-20">
+      <section className="flex pt-32">
         <div className="max-w-3xl">
           <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-8 leading-none">
             Full-Stack
@@ -175,7 +175,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20">
+      <section id="about" className="">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -236,7 +236,7 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 px-6 bg-foreground text-white rounded-md"
+        className="py-20 mb-20 px-6 bg-foreground text-white rounded-md"
       >
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-5xl font-light mb-8">Let&apos;s work together</h2>
@@ -246,7 +246,7 @@ export default function Portfolio() {
           </p>
           <Button
             asChild
-            className="bg-white text-black hover:bg-gray-100 px-8 py-6 text-base rounded-full"
+            className="bg-white text-black hover:bg-gray-100 px-10 py-6 text-base rounded-full"
           >
             <Link href="mailto:timberj@proton.me" target="_blank">
               <Mail className="mr-2 h-4 w-4" />
