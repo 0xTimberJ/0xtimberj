@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <Script
         async
-        data-website-id="4d49fec8-1a22-4030-9b55-120705c807cc"
+        data-website-id="3683321c-7e86-4da0-bbc8-fd41067bd1aa"
         src="https://umami.0xtimberj.com/script.js"
         strategy={"afterInteractive"}
       />
