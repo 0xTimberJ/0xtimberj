@@ -211,7 +211,7 @@ export default function Portfolio() {
                     <div className="flex aspect-square h-full p-1.5">
                       <Image
                         className="h-auto w-full rounded-full"
-                        src="timberj.jpg"
+                        src="/timberj.jpg"
                         alt="Profile image"
                         width={24}
                         height={24}
@@ -248,7 +248,7 @@ export default function Portfolio() {
             asChild
             className="bg-white text-black hover:bg-gray-100 px-8 py-6 text-base rounded-full"
           >
-            <Link href="https://x.com/0xTimberJ" target="_blank">
+            <Link href="mailto:timberj@proton.me" target="_blank">
               <Mail className="mr-2 h-4 w-4" />
               Get in touch
             </Link>
