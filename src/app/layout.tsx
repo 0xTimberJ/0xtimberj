@@ -24,7 +24,7 @@ export default function RootLayout({
       />
       <body>
         <Header />
-        <main className="max-w-7xl mx-auto">{children}</main>
+        <div className="bg-pattern">{children}</div>
         <Footer />
       </body>
     </html>

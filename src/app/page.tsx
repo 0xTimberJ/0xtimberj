@@ -1,65 +1,20 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { WrapperPage } from "@/components/wrapper/wrapper-page";
+import { PROJECTS, SKILLS, TWITTER } from "@/constant";
 import { ArrowUpRight, Github, Globe, Mail, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Portfolio() {
-  const skills = [
-    "Next.js",
-    "TypeScript",
-    "NestJS",
-    "PostgreSQL",
-    "Web3",
-    "Ethereum",
-    "TailwindCSS",
-    "Shadcn UI",
-    "Vercel",
-    "Docker",
-    "Coolify",
-  ];
-
-  const projects = [
-    {
-      name: "Neova Protocol",
-      description:
-        "DePIN Layer ecosystem empowering Data Management and Storage systems through IaaS solution.",
-      twitter: "https://x.com/Neova_Protocol",
-      website: "https://neova.io",
-      type: "Web3 Ecosystem",
-      year: "2024-2025",
-    },
-    {
-      name: "Pentracker",
-      description:
-        "Crypto airdrop tracker - one of my first solo big projects.",
-      website: "https://pentracker.vercel.app",
-      type: "Crypto Tracker",
-      year: "2023-2024",
-    },
-    {
-      name: "Kahoot Generator",
-      description:
-        "AI-powered quiz generator with internationalization support.",
-      github: "https://github.com/0xTimberJ/kahoot-generator",
-      website: "https://kahoot-generator.vercel.app",
-      type: "AI Tool",
-      year: "2025",
-    },
-    {
-      name: "Hyperliquid Tracker",
-      description: "Points tracking system for Hyperliquid protocol.",
-      github: "https://github.com/0xTimberJ/hyperliquid",
-      type: "DeFi Tool",
-      year: "2024",
-    },
-  ];
+  const projects = PROJECTS;
+  const skills = SKILLS;
 
   return (
-    <div className="w-[90%] mx-auto flex flex-col gap-20">
+    <WrapperPage classNameSection="pt-32">
       {/* Hero Section */}
-      <section className="flex pt-32">
+      <section className="flex">
         <div className="max-w-3xl">
           <h1 className="text-6xl md:text-7xl font-light tracking-tight mb-8 leading-none">
             Full-Stack
@@ -76,7 +31,7 @@ export default function Portfolio() {
               asChild
               className="bg-black hover:bg-gray-800 text-white px-8 py-6 text-base rounded-full"
             >
-              <Link href="https://x.com/0xTimberJ" target="_blank">
+              <Link href={TWITTER} target="_blank">
                 Get in touch
                 <ArrowUpRight className="ml-2 h-4 w-4" />
               </Link>
@@ -175,7 +130,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="">
+      <section id="about">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -255,6 +210,6 @@ export default function Portfolio() {
           </Button>
         </div>
       </section>
-    </div>
+    </WrapperPage>
   );
 }
