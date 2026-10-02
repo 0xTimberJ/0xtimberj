@@ -14,6 +14,15 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    name: 'TimberJ Points',
+    description:
+      'Public hub for perp DEX points farming: live venue analytics, personal farming dashboards, a points calendar and an OTC points book across Variational, Arcus, Extended and more.',
+    twitter: 'https://x.com/0xTimberJ',
+    website: 'https://points.0xtimberj.com',
+    type: 'DeFi Tool',
+    year: '2026',
+  },
+  {
     name: 'Neova Protocol',
     description:
       'DePIN Layer ecosystem empowering Data Management and Storage systems through IaaS solution.',
